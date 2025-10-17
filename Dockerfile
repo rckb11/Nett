@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get install -y gcc libssl-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    pip install --upgrade pip poetry
+    pip install --upgrade pip poetry setuptools
 
 WORKDIR /usr/src/owaspnettacker
 

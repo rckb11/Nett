@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('1. Build Docker Image') {
             steps {
-                sh "docker build -t ${IMAGE_NAME}:${env.BUILD_NUMBER} ."
+                sh "docker build --no-cache -t ${IMAGE_NAME}:${env.BUILD_NUMBER} ."
             }
         }
 
